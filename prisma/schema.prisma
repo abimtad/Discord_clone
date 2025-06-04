@@ -65,3 +65,9 @@ model Member {
   @@index([profileId])
   @@index([serverId])
 }
+
+enum ChannelType {
+  TEXT
+  AUDIO
+  VIDEO
+}
