@@ -14,6 +14,9 @@ async function SetupPage() {
       },
     },
   });
+
+  if (server) return redirect(`/server/${server.id}`);
+
   return <div>Create Server</div>;
 }
 
