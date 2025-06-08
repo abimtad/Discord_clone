@@ -42,7 +42,7 @@ function InitialModal() {
     },
   });
 
-  console.log("form:", form);
+  console.log("form values:", form.getValues());
 
   const isLoading = form.formState.isSubmitting;
 
