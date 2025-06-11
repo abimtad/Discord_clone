@@ -16,7 +16,7 @@ async function SetupPage() {
     },
   });
 
-  if (server) return redirect(`/server/${server.id}`);
+  if (server) return redirect(`/servers/${server.id}`);
 
   return <InitialModal />;
 }

@@ -25,6 +25,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   name: z.string().min(1, { message: "Server name is required." }),
@@ -35,6 +36,7 @@ const formSchema = z.object({
 // You can use RHF without a form tag, but you lose these native conveniences and must handle submission differently.
 
 function InitialModal() {
+  const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -49,8 +51,11 @@ function InitialModal() {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      const response = await axios.post("/api/servers", values);
-      console.log("response: ", response);
+      await axios.post("/api/servers", values);
+
+      form.reset();
+      router.refresh();
+      window.location.reload();
     } catch (error: any) {
       console.log("error:", error.message);
     }
