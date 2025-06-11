@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import FileUpload from "@/components/file-upload";
+import axios from "axios";
 
 import {
   Dialog,
@@ -46,7 +47,14 @@ function InitialModal() {
 
   const isLoading = form.formState.isSubmitting;
 
-  const onSubmit = async () => {};
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    try {
+      const response = await axios.post("/api/servers", values);
+      console.log("response: ", response);
+    } catch (error: any) {
+      console.log("error:", error.message);
+    }
+  };
 
   return (
     <Dialog open>

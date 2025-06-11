@@ -26,8 +26,10 @@ export const initialProfile = async () => {
     });
 
     return newProfile;
-  } catch (error) {
-    console.log((error as Error).message);
-    throw new Error((error as Error).message); // explicitly throw
+  } catch (error: unknown) {
+    const message =
+      error instanceof Error ? error.message : "Unknown server error";
+    console.error(message);
+    throw new Error(message);
   }
 };
