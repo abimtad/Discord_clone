@@ -2,8 +2,10 @@
 
 import ActionTooltip from "@/components/Action-tooltip";
 import { cn } from "@/lib/utils";
+import { Router } from "lucide-react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 interface navigationItemProps {
   id: string;
@@ -12,10 +14,16 @@ interface navigationItemProps {
 }
 function NavigationItem({ id, imageUrl, name }: navigationItemProps) {
   const { serverId } = useParams();
+  const router = useRouter();
   console.log("Are they equal:", serverId === id);
+
+  const onClick = () => {
+    router.push(`/servers/{id}`);
+  };
+
   return (
-    <ActionTooltip align="center" label={name}>
-      <button className="group relative flex items-center">
+    <ActionTooltip align="center" side="right" label={name}>
+      <button onClick={onClick} className="group relative flex items-center">
         <div
           className={cn(
             "absolute left-0 bg-primary rounded-r-full transition-all w-[4px]",
@@ -25,7 +33,7 @@ function NavigationItem({ id, imageUrl, name }: navigationItemProps) {
         <div
           className={cn(
             "relative flex mx-3 size-[48px] rounded-[24px] group-hover:rounded-[16px] transition-all overflow-hidden",
-            serverId === id && "bg-primary/10 text-primary"
+            serverId === id && "bg-primary/10 text-primary rounded-[16px]"
           )}
         >
           <Image fill src={imageUrl} alt="Channel" />
