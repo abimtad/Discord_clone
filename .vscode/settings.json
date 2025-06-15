@@ -1,0 +1,55 @@
+{
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "NOTE",
+    "QUESTION",
+    "PROBLEM",
+    "FIX",
+    "SHORT-TERM-FIX"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "tag",
+      "foreground": "#1565c0",
+      "background": "#bbdefb"
+    },
+    "FIXME": {
+      "icon": "alert",
+      "type": "tag",
+      "foreground": "#c62828",
+      "background": "#ffcdd2"
+    },
+    "NOTE": {
+      "icon": "info",
+      "type": "tag",
+      "foreground": "#2e7d32",
+      "background": "#c8e6c9"
+    },
+    "QUESTION": {
+      "icon": "question",
+      "type": "tag",
+      "foreground": "#f9a825",
+      "background": "#fff9c4"
+    },
+    "PROBLEM": {
+      "icon": "flame",
+      "type": "tag",
+      "foreground": "#4e342e",
+      "background": "#d7ccc8"
+    },
+    "FIX": {
+      "icon": "wrench",
+      "type": "tag",
+      "foreground": "#0277bd",
+      "background": "#b3e5fc"
+    },
+    "SHORT-TERM-FIX": {
+      "icon": "clock",
+      "type": "tag",
+      "foreground": "#6a1b9a",
+      "background": "#e1bee7"
+    }
+  }
+}

@@ -24,7 +24,7 @@ async function NavigationSidebar() {
     <div className="flex flex-col bg-gray-50 dark:bg-[#1E1F22] py-3 w-full space-y-4 items-center text-primary h-full">
       <NavigationAction />
       <Separator className="h-[2px] bg-zinc-300 dark:bg-zinc-700 rounded-md w-10 mx-auto" />
-      <ScrollArea className="flex-1 w-full">
+      <ScrollArea className="flex-1 w-full space-y-4">
         {/*unless both the flex ad width is set the scroll area wont show */}
         {servers.map((server) => (
           <NavigationItem

@@ -18,7 +18,7 @@ function NavigationItem({ id, imageUrl, name }: navigationItemProps) {
   console.log("Are they equal:", serverId === id);
 
   const onClick = () => {
-    router.push(`/servers/{id}`);
+    router.push(`/servers/${id}`);
   };
 
   return (
