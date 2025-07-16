@@ -20,20 +20,22 @@ async function NavigationSidebar() {
   const servers = await db.server.findMany({
     where: { members: { some: { profileId: profile.id } } },
   });
+  // TODO: what if one deletes all the server of a given profile wil this logic still hold true  return (
   return (
     <div className="flex flex-col bg-gray-50 dark:bg-[#1E1F22] py-3 w-full space-y-4 items-center text-primary h-full">
       <NavigationAction />
       <Separator className="h-[2px] bg-zinc-300 dark:bg-zinc-700 rounded-md w-10 mx-auto" />
-      <ScrollArea className="flex-1 w-full space-y-4">
-        {/*unless both the flex ad width is set the scroll area wont show */}
-        {servers.map((server) => (
-          <NavigationItem
-            id={server.id}
-            key={server.id}
-            name={server.name}
-            imageUrl={server.imageUrl}
-          />
-        ))}
+      <ScrollArea className="flex-1 w-full">
+        <div className="flex flex-col space-y-4">
+          {servers.map((server) => (
+            <NavigationItem
+              id={server.id}
+              key={server.id}
+              name={server.name}
+              imageUrl={server.imageUrl}
+            />
+          ))}
+        </div>
       </ScrollArea>
       <div className="flex flex-col space-y-4 items-center my-auto">
         <ModeToggle />

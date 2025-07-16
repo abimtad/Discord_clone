@@ -26,6 +26,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useModal } from "@/lib/hooks/use-modal-store";
+import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   name: z.string().min(1, { message: "Server name is required." }),
@@ -36,6 +37,7 @@ const formSchema = z.object({
 // You can use RHF without a form tag, but you lose these native conveniences and must handle submission differently.
 
 function CreateServerModal() {
+  const router = useRouter();
   const { isOpen, onClose, type } = useModal();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -54,16 +56,18 @@ function CreateServerModal() {
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
       await axios.post("/api/servers", values);
-      onClose();
     } catch (error: any) {
       console.log("error:", error.message);
     }
   };
 
-  const handleClose = () => {
-    console.log("modal open state changed");
-    form.reset();
-    onClose();
+  const handleClose = (open: boolean) => {
+    if (!open) {
+      form.reset();
+      router.refresh();
+      window.location.reload();
+      onClose();
+    }
   };
 
   return (

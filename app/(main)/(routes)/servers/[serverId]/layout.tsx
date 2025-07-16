@@ -1,23 +1,46 @@
-import NavigationSidebar from "@/components/navigation/Navigation-sidebar";
+import ServerSidebar from "@/components/server/server-sidebar";
+import { currentProfile } from "@/lib/current-profile";
+import { db } from "@/lib/db";
+import { auth } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
-function MainLayout({ children }: { children: React.ReactNode }) {
+interface serverIdProps {
+  serverId: string;
+}
+
+async function ServerIdLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: serverIdProps;
+}) {
+  const profile = await currentProfile();
+  const { redirectToSignIn } = await auth();
+  const { serverId } = await params;
+
+  if (!profile) return redirectToSignIn();
+
+  const server = await db.server.findUnique({
+    where: {
+      id: serverId,
+      members: {
+        some: {
+          profileId: profile.id,
+        },
+      },
+    },
+  });
+
+  if (!server) return redirect("/");
   return (
     <div className="h-full">
-      {/*
-        QUESTION: 'hidden md:flex' means:
-        - The sidebar is hidden (display: none) on all screens by default.
-        - It becomes flex (display: flex) at the md breakpoint (≥768px).
-        PROBLEM: When ModalProvider was added to the layout, the sidebar stayed hidden at md and up, even though it should have become visible. The exact reason for this CSS specificity conflict is unclear, but it was resolved by using 'md:!flex' (which adds !important).
-        NOTE: It should have worked without !important, so the root cause is still a mystery to unravel another time.
-        FIX: Use 'md:!flex' to ensure the sidebar is visible at md and up, even if other styles try to hide it.
-        SHORT-TERM-FIX: This is a workaround; revisit if related styles or providers change in the future.
-      */}
-      <div className="hidden md:!flex h-full w-[72px] z-30 flex-col fixed inset-y-0">
-        <NavigationSidebar />
+      <div className="hidden md:!flex h-full w-60 z-20 flex-col fixed inset-y-0">
+        <ServerSidebar serverId={server.id} />
       </div>
-      <main className="md:pl-[72px] h-full">{children}</main>
+      <main className="h-full md:pl-60">{children}</main>
     </div>
   );
 }
 
-export default MainLayout;
+export default ServerIdLayout;
