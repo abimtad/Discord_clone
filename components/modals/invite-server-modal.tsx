@@ -39,7 +39,7 @@ function InviteServerModal() {
     setCopied(true);
     setTimeout(() => {
       setCopied(false);
-    }, 5000);
+    }, 3000);
   };
 
   const onNew = async () => {
