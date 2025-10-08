@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { serverWithMembersWithProfile } from "@/types/types";
 
-export type ModalType = "createServer" | "editServer" | "invite";
+export type ModalType = "createServer" | "editServer" | "invite" | "members";
 
 interface ModalData {
   server?: serverWithMembersWithProfile;
