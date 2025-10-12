@@ -1,7 +1,6 @@
 import MembersModal from "@/components/modals/members-modal";
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
-import { serverHooks } from "next/dist/server/app-render/entry-base";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function PATCH(
