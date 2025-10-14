@@ -1,0 +1,158 @@
+Date : 2025-10-14 23:42:59
+Directory : /home/abel/Discord_clone
+Total : 76 files,  12195 codes, 47 comments, 549 blanks, all 12791 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          3 |      8,608 |          0 |          2 |      8,610 |
+| TypeScript JSX     |         42 |      2,616 |         26 |        348 |      2,990 |
+| TypeScript         |         18 |        459 |         11 |         97 |        567 |
+| PostCSS            |          2 |        266 |          3 |         36 |        305 |
+| JavaScript         |          3 |         82 |          3 |          5 |         90 |
+| Prisma             |          1 |         68 |          4 |         22 |         94 |
+| Markdown           |          3 |         64 |          0 |         37 |        101 |
+| JSON with Comments |          2 |         30 |          0 |          2 |         32 |
+| XML                |          2 |          2 |          0 |          0 |          2 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                         | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                            |         76 |     12,195 |         47 |        549 |     12,791 |
+| . (Files)                                                                    |         10 |      8,754 |          5 |         27 |      8,786 |
+| .github                                                                      |          2 |         43 |          0 |         23 |         66 |
+| .github (Files)                                                              |          1 |         39 |          0 |         22 |         61 |
+| .github/chatmodes                                                            |          1 |          4 |          0 |          1 |          5 |
+| app                                                                          |         21 |        792 |         21 |        144 |        957 |
+| app (Files)                                                                  |          3 |        302 |          3 |         41 |        346 |
+| app/(auth)                                                                   |          3 |         17 |          0 |          9 |         26 |
+| app/(auth) (Files)                                                           |          1 |          7 |          0 |          3 |         10 |
+| app/(auth)/(routes)                                                          |          2 |         10 |          0 |          6 |         16 |
+| app/(auth)/(routes)/sign-in                                                  |          1 |          5 |          0 |          3 |          8 |
+| app/(auth)/(routes)/sign-in/[[...sign-in]]                                   |          1 |          5 |          0 |          3 |          8 |
+| app/(auth)/(routes)/sign-up                                                  |          1 |          5 |          0 |          3 |          8 |
+| app/(auth)/(routes)/sign-up/[[...sign-up]]                                   |          1 |          5 |          0 |          3 |          8 |
+| app/(invite)                                                                 |          1 |         37 |          0 |          8 |         45 |
+| app/(invite)/(routes)                                                        |          1 |         37 |          0 |          8 |         45 |
+| app/(invite)/(routes)/invite                                                 |          1 |         37 |          0 |          8 |         45 |
+| app/(invite)/(routes)/invite/[id]                                            |          1 |         37 |          0 |          8 |         45 |
+| app/(main)                                                                   |          3 |         57 |          9 |         13 |         79 |
+| app/(main)/(routes)                                                          |          3 |         57 |          9 |         13 |         79 |
+| app/(main)/(routes)/servers                                                  |          3 |         57 |          9 |         13 |         79 |
+| app/(main)/(routes)/servers (Files)                                          |          1 |         12 |          9 |          3 |         24 |
+| app/(main)/(routes)/servers/[serverId]                                       |          2 |         45 |          0 |         10 |         55 |
+| app/(setup)                                                                  |          1 |         19 |          0 |          6 |         25 |
+| app/api                                                                      |         10 |        360 |          9 |         67 |        436 |
+| app/api/channels                                                             |          1 |         54 |          0 |          9 |         63 |
+| app/api/members                                                              |          1 |        100 |          0 |         13 |        113 |
+| app/api/members/[memberId]                                                   |          1 |        100 |          0 |         13 |        113 |
+| app/api/servers                                                              |          5 |        166 |          6 |         35 |        207 |
+| app/api/servers (Files)                                                      |          1 |         36 |          0 |          4 |         40 |
+| app/api/servers/[id]                                                         |          4 |        130 |          6 |         31 |        167 |
+| app/api/servers/[id] (Files)                                                 |          1 |         32 |          0 |          6 |         38 |
+| app/api/servers/[id]/delete                                                  |          1 |         36 |          3 |          8 |         47 |
+| app/api/servers/[id]/inviteCode                                              |          1 |         17 |          0 |          8 |         25 |
+| app/api/servers/[id]/leave                                                   |          1 |         45 |          3 |          9 |         57 |
+| app/api/uploadthing                                                          |          3 |         40 |          3 |         10 |         53 |
+| app/api/uploadthing (Files)                                                  |          2 |         27 |          2 |          7 |         36 |
+| app/api/uploadthing/delete                                                   |          1 |         13 |          1 |          3 |         17 |
+| components                                                                   |         32 |      2,438 |         17 |        303 |      2,758 |
+| components (Files)                                                           |          4 |        148 |          0 |         25 |        173 |
+| components/modals                                                            |          8 |        920 |         16 |        100 |      1,036 |
+| components/navigation                                                        |          3 |        114 |          1 |         17 |        132 |
+| components/providers                                                         |          2 |         29 |          0 |          5 |         34 |
+| components/server                                                            |          3 |        272 |          0 |         22 |        294 |
+| components/ui                                                                |         12 |        955 |          0 |        134 |      1,089 |
+| lib                                                                          |          7 |         94 |          0 |         28 |        122 |
+| lib (Files)                                                                  |          5 |         55 |          0 |         20 |         75 |
+| lib/hooks                                                                    |          2 |         39 |          0 |          8 |         47 |
+| prisma                                                                       |          1 |         68 |          4 |         22 |         94 |
+| public                                                                       |          2 |          2 |          0 |          0 |          2 |
+| types                                                                        |          1 |          4 |          0 |          2 |          6 |
++------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                     | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| /home/abel/Discord_clone/.eslintrc.json                                      | JSON with Comments |          3 |          0 |          1 |          4 |
+| /home/abel/Discord_clone/.github/chatmodes/Add comment.chatmode.md           | Markdown           |          4 |          0 |          1 |          5 |
+| /home/abel/Discord_clone/.github/copilot-instructions.md                     | Markdown           |         39 |          0 |         22 |         61 |
+| /home/abel/Discord_clone/README.md                                           | Markdown           |         21 |          0 |         14 |         35 |
+| /home/abel/Discord_clone/app/(auth)/(routes)/sign-in/[[...sign-in]]/page.tsx | TypeScript JSX     |          5 |          0 |          3 |          8 |
+| /home/abel/Discord_clone/app/(auth)/(routes)/sign-up/[[...sign-up]]/page.tsx | TypeScript JSX     |          5 |          0 |          3 |          8 |
+| /home/abel/Discord_clone/app/(auth)/layout.tsx                               | TypeScript JSX     |          7 |          0 |          3 |         10 |
+| /home/abel/Discord_clone/app/(invite)/(routes)/invite/[id]/page.tsx          | TypeScript JSX     |         37 |          0 |          8 |         45 |
+| /home/abel/Discord_clone/app/(main)/(routes)/servers/[serverId]/layout.tsx   | TypeScript JSX     |         40 |          0 |          7 |         47 |
+| /home/abel/Discord_clone/app/(main)/(routes)/servers/[serverId]/page.tsx     | TypeScript JSX     |          5 |          0 |          3 |          8 |
+| /home/abel/Discord_clone/app/(main)/(routes)/servers/layout.tsx              | TypeScript JSX     |         12 |          9 |          3 |         24 |
+| /home/abel/Discord_clone/app/(setup)/page.tsx                                | TypeScript JSX     |         19 |          0 |          6 |         25 |
+| /home/abel/Discord_clone/app/api/channels/route.ts                           | TypeScript         |         54 |          0 |          9 |         63 |
+| /home/abel/Discord_clone/app/api/members/[memberId]/route.ts                 | TypeScript         |        100 |          0 |         13 |        113 |
+| /home/abel/Discord_clone/app/api/servers/[id]/delete/route.ts                | TypeScript         |         36 |          3 |          8 |         47 |
+| /home/abel/Discord_clone/app/api/servers/[id]/inviteCode/route.ts            | TypeScript         |         17 |          0 |          8 |         25 |
+| /home/abel/Discord_clone/app/api/servers/[id]/leave/route.ts                 | TypeScript         |         45 |          3 |          9 |         57 |
+| /home/abel/Discord_clone/app/api/servers/[id]/route.ts                       | TypeScript         |         32 |          0 |          6 |         38 |
+| /home/abel/Discord_clone/app/api/servers/route.ts                            | TypeScript         |         36 |          0 |          4 |         40 |
+| /home/abel/Discord_clone/app/api/uploadthing/core.ts                         | TypeScript         |         19 |          1 |          4 |         24 |
+| /home/abel/Discord_clone/app/api/uploadthing/delete/route.ts                 | TypeScript         |         13 |          1 |          3 |         17 |
+| /home/abel/Discord_clone/app/api/uploadthing/route.ts                        | TypeScript         |          8 |          1 |          3 |         12 |
+| /home/abel/Discord_clone/app/globals.css                                     | PostCSS            |         71 |          0 |          4 |         75 |
+| /home/abel/Discord_clone/app/layout.tsx                                      | TypeScript JSX     |         36 |          0 |          5 |         41 |
+| /home/abel/Discord_clone/app/page.module.css                                 | PostCSS            |        195 |          3 |         32 |        230 |
+| /home/abel/Discord_clone/components.json                                     | JSON               |         21 |          0 |          0 |         21 |
+| /home/abel/Discord_clone/components/Action-tooltip.tsx                       | TypeScript JSX     |         27 |          0 |          4 |         31 |
+| /home/abel/Discord_clone/components/file-upload.tsx                          | TypeScript JSX     |         68 |          0 |         13 |         81 |
+| /home/abel/Discord_clone/components/modals/create-channel-modal.tsx          | TypeScript JSX     |        150 |          2 |         13 |        165 |
+| /home/abel/Discord_clone/components/modals/create-server-modal.tsx           | TypeScript JSX     |        125 |          2 |         14 |        141 |
+| /home/abel/Discord_clone/components/modals/delete-server-modal.tsx           | TypeScript JSX     |         71 |          2 |         10 |         83 |
+| /home/abel/Discord_clone/components/modals/edit-server-modal.tsx             | TypeScript JSX     |        132 |          2 |         14 |        148 |
+| /home/abel/Discord_clone/components/modals/initial-modal.tsx                 | TypeScript JSX     |        115 |          2 |         13 |        130 |
+| /home/abel/Discord_clone/components/modals/invite-server-modal.tsx           | TypeScript JSX     |         93 |          2 |         12 |        107 |
+| /home/abel/Discord_clone/components/modals/leave-server-modal.tsx            | TypeScript JSX     |         79 |          2 |         10 |         91 |
+| /home/abel/Discord_clone/components/modals/members-modal.tsx                 | TypeScript JSX     |        155 |          2 |         14 |        171 |
+| /home/abel/Discord_clone/components/mode-toggle.tsx                          | TypeScript JSX     |         40 |          0 |          5 |         45 |
+| /home/abel/Discord_clone/components/navigation/Navigation-action.tsx         | TypeScript JSX     |         26 |          0 |          4 |         30 |
+| /home/abel/Discord_clone/components/navigation/Navigation-item.tsx           | TypeScript JSX     |         41 |          0 |          6 |         47 |
+| /home/abel/Discord_clone/components/navigation/Navigation-sidebar.tsx        | TypeScript JSX     |         47 |          1 |          7 |         55 |
+| /home/abel/Discord_clone/components/providers/modal-providers.tsx            | TypeScript JSX     |         20 |          0 |          2 |         22 |
+| /home/abel/Discord_clone/components/providers/theme-provider.tsx             | TypeScript JSX     |          9 |          0 |          3 |         12 |
+| /home/abel/Discord_clone/components/server/server-header.tsx                 | TypeScript JSX     |        106 |          0 |          7 |        113 |
+| /home/abel/Discord_clone/components/server/server-search.tsx                 | TypeScript JSX     |         44 |          0 |          4 |         48 |
+| /home/abel/Discord_clone/components/server/server-sidebar.tsx                | TypeScript JSX     |        122 |          0 |         11 |        133 |
+| /home/abel/Discord_clone/components/ui/avatar.tsx                            | TypeScript JSX     |         44 |          0 |          7 |         51 |
+| /home/abel/Discord_clone/components/ui/button.tsx                            | TypeScript JSX     |         52 |          0 |          6 |         58 |
+| /home/abel/Discord_clone/components/ui/command.tsx                           | TypeScript JSX     |        136 |          0 |         18 |        154 |
+| /home/abel/Discord_clone/components/ui/dialog.tsx                            | TypeScript JSX     |        109 |          0 |         14 |        123 |
+| /home/abel/Discord_clone/components/ui/dropdown-menu.tsx                     | TypeScript JSX     |        182 |          0 |         19 |        201 |
+| /home/abel/Discord_clone/components/ui/form.tsx                              | TypeScript JSX     |        153 |          0 |         26 |        179 |
+| /home/abel/Discord_clone/components/ui/input.tsx                             | TypeScript JSX     |         19 |          0 |          4 |         23 |
+| /home/abel/Discord_clone/components/ui/label.tsx                             | TypeScript JSX     |         21 |          0 |          6 |         27 |
+| /home/abel/Discord_clone/components/ui/scroll-area.tsx                       | TypeScript JSX     |         43 |          0 |          6 |         49 |
+| /home/abel/Discord_clone/components/ui/select.tsx                            | TypeScript JSX     |        146 |          0 |         15 |        161 |
+| /home/abel/Discord_clone/components/ui/separator.tsx                         | TypeScript JSX     |         27 |          0 |          5 |         32 |
+| /home/abel/Discord_clone/components/ui/tooltip.tsx                           | TypeScript JSX     |         23 |          0 |          8 |         31 |
+| /home/abel/Discord_clone/components/user-avatar.tsx                          | TypeScript JSX     |         13 |          0 |          3 |         16 |
+| /home/abel/Discord_clone/lib/current-profile.ts                              | TypeScript         |          8 |          0 |          4 |         12 |
+| /home/abel/Discord_clone/lib/db.ts                                           | TypeScript         |          6 |          0 |          4 |         10 |
+| /home/abel/Discord_clone/lib/hooks/use-modal-store.ts                        | TypeScript         |         27 |          0 |          4 |         31 |
+| /home/abel/Discord_clone/lib/hooks/use-origin.tsx                            | TypeScript JSX     |         12 |          0 |          4 |         16 |
+| /home/abel/Discord_clone/lib/initial-profile.ts                              | TypeScript         |         29 |          0 |          7 |         36 |
+| /home/abel/Discord_clone/lib/uploadthing.ts                                  | TypeScript         |          7 |          0 |          3 |         10 |
+| /home/abel/Discord_clone/lib/utils.ts                                        | TypeScript         |          5 |          0 |          2 |          7 |
+| /home/abel/Discord_clone/middleware.ts                                       | TypeScript         |         13 |          2 |          4 |         19 |
+| /home/abel/Discord_clone/next.config.js                                      | JavaScript         |         15 |          1 |          2 |         18 |
+| /home/abel/Discord_clone/package-lock.json                                   | JSON               |      8,532 |          0 |          1 |      8,533 |
+| /home/abel/Discord_clone/package.json                                        | JSON               |         55 |          0 |          1 |         56 |
+| /home/abel/Discord_clone/postcss.config.js                                   | JavaScript         |          6 |          0 |          1 |          7 |
+| /home/abel/Discord_clone/prisma/schema.prisma                                | Prisma             |         68 |          4 |         22 |         94 |
+| /home/abel/Discord_clone/public/next.svg                                     | XML                |          1 |          0 |          0 |          1 |
+| /home/abel/Discord_clone/public/vercel.svg                                   | XML                |          1 |          0 |          0 |          1 |
+| /home/abel/Discord_clone/tailwind.config.js                                  | JavaScript         |         61 |          2 |          2 |         65 |
+| /home/abel/Discord_clone/tsconfig.json                                       | JSON with Comments |         27 |          0 |          1 |         28 |
+| /home/abel/Discord_clone/types/types.ts                                      | TypeScript         |          4 |          0 |          2 |          6 |
+| Total                                                                        |                    |     12,195 |         47 |        549 |     12,791 |
++------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

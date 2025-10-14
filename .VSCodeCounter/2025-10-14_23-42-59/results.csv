@@ -1,0 +1,78 @@
+"filename", "language", "TypeScript", "JavaScript", "JSON with Comments", "JSON", "TypeScript JSX", "XML", "Markdown", "PostCSS", "Prisma", "comment", "blank", "total"
+"/home/abel/Discord_clone/.eslintrc.json", "JSON with Comments", 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 1, 4
+"/home/abel/Discord_clone/.github/chatmodes/Add comment.chatmode.md", "Markdown", 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 1, 5
+"/home/abel/Discord_clone/.github/copilot-instructions.md", "Markdown", 0, 0, 0, 0, 0, 0, 39, 0, 0, 0, 22, 61
+"/home/abel/Discord_clone/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 21, 0, 0, 0, 14, 35
+"/home/abel/Discord_clone/app/(auth)/(routes)/sign-in/[[...sign-in]]/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 3, 8
+"/home/abel/Discord_clone/app/(auth)/(routes)/sign-up/[[...sign-up]]/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 3, 8
+"/home/abel/Discord_clone/app/(auth)/layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 3, 10
+"/home/abel/Discord_clone/app/(invite)/(routes)/invite/[id]/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 37, 0, 0, 0, 0, 0, 8, 45
+"/home/abel/Discord_clone/app/(main)/(routes)/servers/[serverId]/layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 7, 47
+"/home/abel/Discord_clone/app/(main)/(routes)/servers/[serverId]/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 3, 8
+"/home/abel/Discord_clone/app/(main)/(routes)/servers/layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 12, 0, 0, 0, 0, 9, 3, 24
+"/home/abel/Discord_clone/app/(setup)/page.tsx", "TypeScript JSX", 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 6, 25
+"/home/abel/Discord_clone/app/api/channels/route.ts", "TypeScript", 54, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 63
+"/home/abel/Discord_clone/app/api/members/[memberId]/route.ts", "TypeScript", 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 113
+"/home/abel/Discord_clone/app/api/servers/[id]/delete/route.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 3, 8, 47
+"/home/abel/Discord_clone/app/api/servers/[id]/inviteCode/route.ts", "TypeScript", 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 25
+"/home/abel/Discord_clone/app/api/servers/[id]/leave/route.ts", "TypeScript", 45, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9, 57
+"/home/abel/Discord_clone/app/api/servers/[id]/route.ts", "TypeScript", 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 38
+"/home/abel/Discord_clone/app/api/servers/route.ts", "TypeScript", 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 40
+"/home/abel/Discord_clone/app/api/uploadthing/core.ts", "TypeScript", 19, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 24
+"/home/abel/Discord_clone/app/api/uploadthing/delete/route.ts", "TypeScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 17
+"/home/abel/Discord_clone/app/api/uploadthing/route.ts", "TypeScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 12
+"/home/abel/Discord_clone/app/globals.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 71, 0, 0, 4, 75
+"/home/abel/Discord_clone/app/layout.tsx", "TypeScript JSX", 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 5, 41
+"/home/abel/Discord_clone/app/page.module.css", "PostCSS", 0, 0, 0, 0, 0, 0, 0, 195, 0, 3, 32, 230
+"/home/abel/Discord_clone/components.json", "JSON", 0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 21
+"/home/abel/Discord_clone/components/Action-tooltip.tsx", "TypeScript JSX", 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 4, 31
+"/home/abel/Discord_clone/components/file-upload.tsx", "TypeScript JSX", 0, 0, 0, 0, 68, 0, 0, 0, 0, 0, 13, 81
+"/home/abel/Discord_clone/components/modals/create-channel-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 150, 0, 0, 0, 0, 2, 13, 165
+"/home/abel/Discord_clone/components/modals/create-server-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 125, 0, 0, 0, 0, 2, 14, 141
+"/home/abel/Discord_clone/components/modals/delete-server-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 71, 0, 0, 0, 0, 2, 10, 83
+"/home/abel/Discord_clone/components/modals/edit-server-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 132, 0, 0, 0, 0, 2, 14, 148
+"/home/abel/Discord_clone/components/modals/initial-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 115, 0, 0, 0, 0, 2, 13, 130
+"/home/abel/Discord_clone/components/modals/invite-server-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 93, 0, 0, 0, 0, 2, 12, 107
+"/home/abel/Discord_clone/components/modals/leave-server-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 79, 0, 0, 0, 0, 2, 10, 91
+"/home/abel/Discord_clone/components/modals/members-modal.tsx", "TypeScript JSX", 0, 0, 0, 0, 155, 0, 0, 0, 0, 2, 14, 171
+"/home/abel/Discord_clone/components/mode-toggle.tsx", "TypeScript JSX", 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 5, 45
+"/home/abel/Discord_clone/components/navigation/Navigation-action.tsx", "TypeScript JSX", 0, 0, 0, 0, 26, 0, 0, 0, 0, 0, 4, 30
+"/home/abel/Discord_clone/components/navigation/Navigation-item.tsx", "TypeScript JSX", 0, 0, 0, 0, 41, 0, 0, 0, 0, 0, 6, 47
+"/home/abel/Discord_clone/components/navigation/Navigation-sidebar.tsx", "TypeScript JSX", 0, 0, 0, 0, 47, 0, 0, 0, 0, 1, 7, 55
+"/home/abel/Discord_clone/components/providers/modal-providers.tsx", "TypeScript JSX", 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 2, 22
+"/home/abel/Discord_clone/components/providers/theme-provider.tsx", "TypeScript JSX", 0, 0, 0, 0, 9, 0, 0, 0, 0, 0, 3, 12
+"/home/abel/Discord_clone/components/server/server-header.tsx", "TypeScript JSX", 0, 0, 0, 0, 106, 0, 0, 0, 0, 0, 7, 113
+"/home/abel/Discord_clone/components/server/server-search.tsx", "TypeScript JSX", 0, 0, 0, 0, 44, 0, 0, 0, 0, 0, 4, 48
+"/home/abel/Discord_clone/components/server/server-sidebar.tsx", "TypeScript JSX", 0, 0, 0, 0, 122, 0, 0, 0, 0, 0, 11, 133
+"/home/abel/Discord_clone/components/ui/avatar.tsx", "TypeScript JSX", 0, 0, 0, 0, 44, 0, 0, 0, 0, 0, 7, 51
+"/home/abel/Discord_clone/components/ui/button.tsx", "TypeScript JSX", 0, 0, 0, 0, 52, 0, 0, 0, 0, 0, 6, 58
+"/home/abel/Discord_clone/components/ui/command.tsx", "TypeScript JSX", 0, 0, 0, 0, 136, 0, 0, 0, 0, 0, 18, 154
+"/home/abel/Discord_clone/components/ui/dialog.tsx", "TypeScript JSX", 0, 0, 0, 0, 109, 0, 0, 0, 0, 0, 14, 123
+"/home/abel/Discord_clone/components/ui/dropdown-menu.tsx", "TypeScript JSX", 0, 0, 0, 0, 182, 0, 0, 0, 0, 0, 19, 201
+"/home/abel/Discord_clone/components/ui/form.tsx", "TypeScript JSX", 0, 0, 0, 0, 153, 0, 0, 0, 0, 0, 26, 179
+"/home/abel/Discord_clone/components/ui/input.tsx", "TypeScript JSX", 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 4, 23
+"/home/abel/Discord_clone/components/ui/label.tsx", "TypeScript JSX", 0, 0, 0, 0, 21, 0, 0, 0, 0, 0, 6, 27
+"/home/abel/Discord_clone/components/ui/scroll-area.tsx", "TypeScript JSX", 0, 0, 0, 0, 43, 0, 0, 0, 0, 0, 6, 49
+"/home/abel/Discord_clone/components/ui/select.tsx", "TypeScript JSX", 0, 0, 0, 0, 146, 0, 0, 0, 0, 0, 15, 161
+"/home/abel/Discord_clone/components/ui/separator.tsx", "TypeScript JSX", 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 5, 32
+"/home/abel/Discord_clone/components/ui/tooltip.tsx", "TypeScript JSX", 0, 0, 0, 0, 23, 0, 0, 0, 0, 0, 8, 31
+"/home/abel/Discord_clone/components/user-avatar.tsx", "TypeScript JSX", 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 3, 16
+"/home/abel/Discord_clone/lib/current-profile.ts", "TypeScript", 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 12
+"/home/abel/Discord_clone/lib/db.ts", "TypeScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10
+"/home/abel/Discord_clone/lib/hooks/use-modal-store.ts", "TypeScript", 27, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 31
+"/home/abel/Discord_clone/lib/hooks/use-origin.tsx", "TypeScript JSX", 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 4, 16
+"/home/abel/Discord_clone/lib/initial-profile.ts", "TypeScript", 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 36
+"/home/abel/Discord_clone/lib/uploadthing.ts", "TypeScript", 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 10
+"/home/abel/Discord_clone/lib/utils.ts", "TypeScript", 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7
+"/home/abel/Discord_clone/middleware.ts", "TypeScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4, 19
+"/home/abel/Discord_clone/next.config.js", "JavaScript", 0, 15, 0, 0, 0, 0, 0, 0, 0, 1, 2, 18
+"/home/abel/Discord_clone/package-lock.json", "JSON", 0, 0, 0, 8532, 0, 0, 0, 0, 0, 0, 1, 8533
+"/home/abel/Discord_clone/package.json", "JSON", 0, 0, 0, 55, 0, 0, 0, 0, 0, 0, 1, 56
+"/home/abel/Discord_clone/postcss.config.js", "JavaScript", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7
+"/home/abel/Discord_clone/prisma/schema.prisma", "Prisma", 0, 0, 0, 0, 0, 0, 0, 0, 68, 4, 22, 94
+"/home/abel/Discord_clone/public/next.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"/home/abel/Discord_clone/public/vercel.svg", "XML", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1
+"/home/abel/Discord_clone/tailwind.config.js", "JavaScript", 0, 61, 0, 0, 0, 0, 0, 0, 0, 2, 2, 65
+"/home/abel/Discord_clone/tsconfig.json", "JSON with Comments", 0, 0, 27, 0, 0, 0, 0, 0, 0, 0, 1, 28
+"/home/abel/Discord_clone/types/types.ts", "TypeScript", 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 6
+"Total", "-", 459, 82, 30, 8608, 2616, 2, 64, 266, 68, 47, 549, 12791
