@@ -15,7 +15,6 @@ interface navigationItemProps {
 function NavigationItem({ id, imageUrl, name }: navigationItemProps) {
   const { serverId } = useParams();
   const router = useRouter();
-  console.log("Are they equal:", serverId === id);
 
   const onClick = () => {
     router.push(`/servers/${id}`);

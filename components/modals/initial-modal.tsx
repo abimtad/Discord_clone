@@ -55,7 +55,6 @@ function InitialModal() {
 
       form.reset();
       router.refresh();
-      window.location.reload();
     } catch (error: any) {
       console.log("error:", error.message);
     }
