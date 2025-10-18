@@ -17,7 +17,7 @@ import {
   UserPlus,
   Users,
 } from "lucide-react";
-import { DropdownMenuContent } from "@radix-ui/react-dropdown-menu";
+import { DropdownMenuContent } from "@/components/ui/dropdown-menu";
 import { useModal } from "@/lib/hooks/use-modal-store";
 
 interface serverHeaderProps {

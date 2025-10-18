@@ -9,7 +9,8 @@ export default function useOrigin() {
 
   useEffect(() => {
     setIsMounted(true);
-  });
+  }, []);
 
-  if (isMounted) return origin;
+  // Always return a string to keep SSR/CSR markup consistent
+  return isMounted ? origin : "";
 }

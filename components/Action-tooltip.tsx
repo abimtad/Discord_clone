@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Tooltip,
   TooltipTrigger,
@@ -18,9 +20,7 @@ function ActionTooltip({ label, children, side, align }: ActionTooltipProps) {
       <Tooltip>
         <TooltipTrigger asChild>{children}</TooltipTrigger>
         <TooltipContent side={side} align={align}>
-          <p className="font-semibold text-sm capitalize">
-            {label.toLowerCase()}
-          </p>
+          <p className="font-semibold text-sm capitalize">{label}</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>

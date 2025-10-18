@@ -67,7 +67,6 @@ function CreateServerModal() {
     if (!open) {
       form.reset();
       router.refresh();
-      window.location.reload();
       onClose();
     }
   };

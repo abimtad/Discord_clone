@@ -1,6 +1,5 @@
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
-import { parseAppSegmentConfig } from "next/dist/build/segment-config/app/app-segment-config";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function PATCH(

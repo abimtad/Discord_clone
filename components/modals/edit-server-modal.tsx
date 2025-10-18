@@ -67,7 +67,6 @@ function EditServerModal() {
     if (!open) {
       form.reset();
       router.refresh();
-      window.location.reload();
       onClose();
     }
   };
@@ -77,7 +76,7 @@ function EditServerModal() {
       form.setValue("name", server.name);
       form.setValue("imageUrl", server.imageUrl);
     }
-  }, [server]);
+  }, [server, form]);
 
   return (
     <Dialog open={isModalOpen} onOpenChange={handleClose}>

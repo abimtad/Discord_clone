@@ -9,7 +9,7 @@ import {
   CommandItem,
 } from "../ui/command";
 import { Search } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface ServerSearchProps {
   data: {
@@ -27,6 +27,18 @@ interface ServerSearchProps {
 
 export const ServerSearch = ({ data }: ServerSearchProps) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const down = (e: KeyboardEvent) => {
+      if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault();
+        setIsOpen((isOpen) => !isOpen);
+      }
+    };
+    document.addEventListener("keydown", down);
+    return () => document.removeEventListener("keydown", down);
+  }, []);
+
   return (
     <>
       <button

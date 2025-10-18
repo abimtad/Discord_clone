@@ -34,6 +34,7 @@ import {
   SelectValue,
 } from "../ui/select";
 import { Server } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const formSchema = z.object({
   name: z
@@ -55,7 +56,7 @@ function CreateChannelModal() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
-      type: "TEXT",
+      type: data.channelType || ChannelType.TEXT,
     },
   });
 
@@ -66,9 +67,18 @@ function CreateChannelModal() {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      await axios.post(`/api/channels?serverId=${server?.id}`, values);
+      if (!server?.id) {
+        console.log("Create channel aborted: missing server id", server);
+        return;
+      }
+
+      const response = await axios.post(
+        `/api/channels?serverId=${server.id}`,
+        values
+      );
       form.reset();
       onClose();
+      router.refresh();
     } catch (error: any) {
       console.log("Create Channel:", error.message);
     }
@@ -78,10 +88,17 @@ function CreateChannelModal() {
     if (!open) {
       form.reset();
       router.refresh();
-      window.location.reload();
       onClose();
     }
   };
+
+  // useEffect(() => {
+  //   if (isModalOpen && data.channelType) {
+  //     form.setValue("type", data.channelType);
+  //   } else {
+  //     form.setValue("type", ChannelType.TEXT);
+  //   }
+  // }, [data.channelType, form, isModalOpen]);
 
   return (
     <Dialog open={isModalOpen} onOpenChange={handleClose}>
@@ -125,8 +142,8 @@ function CreateChannelModal() {
                     <FormControl>
                       <Select
                         disabled={isLoading}
-                        onValueChange={field.onChange}
                         defaultValue={field.value}
+                        onValueChange={field.onChange}
                       >
                         <SelectTrigger className="bg-zinc-300/50 border-0 outline-none ring-offset-0 capitalize text-black focus-visible:ring-offset-0">
                           <SelectValue defaultValue="Select a Channel Type" />
